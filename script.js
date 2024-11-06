@@ -178,7 +178,6 @@ function showResult() {
     document.getElementById("trophy").src = trophyImage;
     document.getElementById("trophy-text").innerText = trophyText;
 }
-
 function restartQuiz() {
     score = 0;
     currentQuestionIndex = 0;
