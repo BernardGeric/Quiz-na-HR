@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz o Općem Znaju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-container">
+        <h1>Kviz o općem znanju</h1>
+        <button id="start-btn" onclick="startQuiz()">Započnite kviz</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div id="answers-container">
+                <button class="answer-btn" onclick="selectAnswer(0)"></button>
+                <button class="answer-btn" onclick="selectAnswer(1)"></button>
+                <button class="answer-btn" onclick="selectAnswer(2)"></button>
+                <button class="answer-btn" onclick="selectAnswer(3)"></button>
+            </div>
+        </div>
+        <!-- Premjestili smo dugme ispod pitanja -->
+        <button id="next-btn" onclick="nextQuestion()" style="display: none;">Sljedeće pitanje</button>
+    </div>
+    
+
+    <div id="result-container" style="display: none;">
+        <h2 id="result">Vaš rezultat je: 0 / 20</h2>
+        <div id="trophy-container">
+            <img id="trophy" src="" alt="Trophy" style="width: 100px; height: auto;">
+            <p id="trophy-text"></p>
+        </div>
+        <button id="restart-btn" onclick="restartQuiz()">Započnite kviz ispočetka</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

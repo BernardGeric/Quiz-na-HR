@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./assets/kviz.png'); /* Zamijenite s putanjom do vaše slike */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#start-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#start-btn, #next-btn, #restart-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#start-btn:hover, #next-btn:hover, #restart-btn:hover {
+    background-color: #218838;
+}
+
+#quiz-container, #result-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.answer-btn:hover {
+    background-color: #0056b3;
+}
+
+#trophy-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#trophy {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Stiliziramo roditeljski element #quiz-container da bude flex container */
+#quiz-container {
+    display: flex;
+    flex-direction: column;  /* Postavljamo sve elemente vertikalno */
+    align-items: center;     /* Centriramo sadržaj horizontalno */
+    justify-content: center; /* Centriramo sadržaj vertikalno */
+               /* Zauzimamo cijeli ekran visinom */
+}
+
+/* Stil za točan odgovor */
+.correct {
+    background-color: #4CAF50;  /* Zeleni za točan odgovor */
+    color: white;
+}
+
+/* Stil za netočan odgovor */
+.incorrect {
+    background-color: #f44336;  /* Crveni za netočan odgovor */
+    color: white;
+}
+
+/* Centriranje dugmeta "Sljedeće pitanje" */
+#next-btn {
+    display: flex;            /* Pretvaramo dugme u flex container */
+    justify-content: center;  /* Centriramo dugme horizontalno */
+    align-items: center;      /* Centriramo dugme vertikalno */
+    margin: 0 auto;           /* Centriramo dugme unutar roditeljskog elementa */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;       /* Postavljamo dugme u odnosu na roditelja */
+    left: 50%;                /* Horizontalno centriranje */
+    bottom: 200px;             /* Postavljamo 50px od dna ekrana */
+    transform: translateX(-50%); /* Precizno centriranje */
+}
+
+/* Stiliziranje dugmeta pri hoveru */
+#next-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Dodajte osnovni CSS za pehare */
+#trophy-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#trophy {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
